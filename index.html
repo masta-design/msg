@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Каталог сервисных продуктов МультиСервисГарант">
+  <title>Все услуги — МультиСервисГарант</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260808-14">
+  <script src="script.js?v=20260808-8" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-top">
+      <a class="brand" href="index.html" aria-label="МультиСервисГарант — главная">
+        <span class="brand-mark">МСГ</span>
+        <span class="brand-text">МультиСервисГарант</span>
+      </a>
+      <div class="catalog-search">
+        <div class="catalog-search__field">
+          <span class="catalog-search__icon">⌕</span>
+          <input data-catalog-search type="search" placeholder="Найти услугу..." aria-label="Поиск по каталогу услуг" autocomplete="off">
+        </div>
+        <div class="search-results" role="listbox"></div>
+      </div>
+      <div class="header-actions">
+        <a class="support-phone" href="tel:+78047000224">+7 804 700-02-24<small>круглосуточно</small></a>
+        <a class="button button--small" href="clients.html" data-placeholder-link>Получить помощь</a>
+        <button class="menu-toggle" data-menu-toggle type="button" aria-label="Открыть меню" aria-expanded="false">☰</button>
+      </div>
+    </div>
+    <div class="header-nav-wrap">
+      <nav class="container header-nav" aria-label="Основная навигация">
+        <div class="nav-item">
+          <a href="index.html" aria-current="page">Наши сервисы <span class="nav-caret">⌄</span></a>
+          <div class="nav-dropdown nav-dropdown--services">
+            <a href="auto-services.html" data-placeholder-link><span>🚘</span><span>Сервисы для авто<small>Помощь на дороге и автомобильные продукты</small></span></a>
+            <a href="life-services.html"><span>🏠</span><span>Сервисы для дома<small>Мастера, диагностика и недвижимость</small></span></a>
+            <a aria-disabled="true"><span>✨</span><span>Сервисы для комфортной жизни<small>Поддержка в повседневных и важных ситуациях</small></span></a>
+            <a aria-disabled="true"><span>⚖️</span><span>Правовая поддержка<small>Юридические консультации и сопровождение</small></span></a>
+            <a href="service-blocks.html"><span>▦</span><span>Библиотека блоков<small>Все шаблонные секции для наполнения</small></span></a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="promotions.html" data-placeholder-link>Акции <span class="nav-caret">⌄</span></a>
+          <div class="nav-dropdown">
+            <a href="promotions.html?offer=road" data-placeholder-link><span>Защита в поездке</span></a>
+            <a href="promotions.html?offer=finance" data-placeholder-link><span>Финансовая безопасность</span></a>
+            <a href="promotions.html?offer=home" data-placeholder-link><span>Дом готов к сезону</span></a>
+          </div>
+        </div>
+        <a href="partners.html" data-placeholder-link>Партнёрам</a>
+        <a href="clients.html" data-placeholder-link>Клиентам</a>
+        <div class="nav-item">
+          <a href="information.html" data-placeholder-link>Информация <span class="nav-caret">⌄</span></a>
+          <div class="nav-dropdown nav-dropdown--right">
+            <a href="news.html" data-placeholder-link><span>Новости</span></a>
+            <a href="legal.html" data-placeholder-link><span>Правовая информация</span></a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="about.html" data-placeholder-link>О нас <span class="nav-caret">⌄</span></a>
+          <div class="nav-dropdown nav-dropdown--right">
+            <a href="contacts.html" data-placeholder-link><span>Контакты</span></a>
+            <a href="legal.html" data-placeholder-link><span>Правовая информация</span></a>
+            <a href="privacy.html" data-placeholder-link><span>Политика обработки персональных данных</span></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container breadcrumbs" aria-label="Хлебные крошки">
+      <a href="index.html">Главная</a>
+      <span>Все услуги</span>
+    </div>
+
+    <section class="service-strip" aria-label="Быстрый переход к услугам" data-service-slider>
+      <div class="service-strip__inner">
+        <span class="service-strip__fade service-strip__fade--left" aria-hidden="true" hidden></span>
+        <button class="service-strip__arrow" type="button" aria-label="Предыдущие услуги" data-service-prev hidden>←</button>
+        <div class="service-strip__viewport" data-service-viewport>
+          <div class="service-strip__track">
+            <a href="#popular">Мастер на час</a><a href="#popular">Рули с выгодой</a><a href="life-services.html#products">Живи с выгодой</a><a href="#popular">Чекап квартиры</a><a href="#trust">Общие положения по сервисам</a><a href="#popular">Техпомощь</a><a href="life-services.html#products">Приёмка квартиры</a><a href="financial-protector.html">Домовой сервис</a><a aria-disabled="true">Правовая поддержка</a>
+          </div>
+        </div>
+        <span class="service-strip__fade" aria-hidden="true"></span>
+        <button class="service-strip__arrow" type="button" aria-label="Следующие услуги" data-service-next>→</button>
+      </div>
+    </section>
+
+    <section class="section" id="directions">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-heading__copy">
+            <h1>Выберите нужное направление</h1>
+            <p>Готовые сервисы для автомобиля, дома, комфортной жизни и правовой поддержки.</p>
+          </div>
+        </div>
+        <div class="grid grid--2">
+          <a class="direction-card" href="auto-services.html" data-placeholder-link>
+            <div class="direction-card__visual"><span>🚗</span><small>Мини-иллюстрация<br>автомобильных сервисов</small></div>
+            <h3>Сервисы для авто</h3>
+            <p>Помощь на дороге и автомобильные продукты для повседневных и экстренных ситуаций.</p>
+            <div class="direction-card__links"><span>Техпомощь</span><span>Эвакуация</span><span>Автоюрист</span></div>
+          </a>
+          <a class="direction-card" href="life-services.html">
+            <div class="direction-card__visual"><span>🏠</span><small>Мини-иллюстрация<br>домовых сервисов</small></div>
+            <h3>Сервисы для дома</h3>
+            <p>Мастера, диагностика и поддержка владельцев недвижимости.</p>
+            <div class="direction-card__links"><span>Домовой сервис</span><span>Чекап квартиры</span><span>Приёмка</span></div>
+          </a>
+          <article class="direction-card" aria-disabled="true">
+            <div class="direction-card__visual"><span>✦</span><small>Мини-иллюстрация<br>сервисов для жизни</small></div>
+            <h3>Сервисы для комфортной жизни</h3>
+            <p>Финансовая защита и повседневная поддержка в важных жизненных ситуациях.</p>
+            <div class="direction-card__links"><span>Финансовый защитник</span><span>Правовая поддержка</span></div>
+          </article>
+          <article class="direction-card" aria-disabled="true">
+            <div class="direction-card__visual"><span>⚖</span><small>Мини-иллюстрация<br>правовой поддержки</small></div>
+            <h3>Правовая поддержка</h3>
+            <p>Юридические консультации и сопровождение по повседневным вопросам.</p>
+            <div class="direction-card__links"><span>Консультация юриста</span><span>Разбор документов</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white" id="popular">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-heading__copy"><h2>Сервисы, которые выбирают чаще</h2><p>Быстрый доступ к востребованным продуктам из разных направлений.</p></div>
+        </div>
+      </div>
+      <div class="popular-slider" data-service-slider>
+        <span class="popular-slider__fade popular-slider__fade--left" data-slider-left-fade aria-hidden="true" hidden></span>
+        <button class="popular-slider__arrow popular-slider__arrow--prev" type="button" aria-label="Предыдущие сервисы" data-service-prev hidden>←</button>
+        <div class="popular-slider__viewport" data-service-viewport>
+          <div class="popular-slider__track">
+            <a class="product-card product-card--compact" href="#contact"><span class="product-card__icon">🛠️</span><h3>Мастер на час</h3><p>Помощь с мелким ремонтом и бытовыми задачами дома.</p></a>
+            <a class="product-card product-card--compact" href="#contact"><span class="product-card__icon">🚗</span><h3>Рули с выгодой</h3><p>Полезные сервисы для уверенных поездок и автомобиля.</p></a>
+            <a class="product-card product-card--compact" href="life-services.html#products"><span class="product-card__icon">✨</span><h3>Живи с выгодой</h3><p>Поддержка в повседневных делах и важных ситуациях.</p></a>
+            <a class="product-card product-card--compact" href="#contact"><span class="product-card__icon">🏢</span><h3>Чекап квартиры</h3><p>Техническая проверка жилья перед покупкой или арендой.</p></a>
+            <a class="product-card product-card--compact" href="#trust"><span class="product-card__icon">📋</span><h3>Общие положения по сервисам</h3><p>Условия обслуживания, правила и важная информация.</p></a>
+            <a class="product-card product-card--compact" href="#contact"><span class="product-card__icon">🚙</span><h3>Техпомощь</h3><p>Экстренная поддержка в дороге в любое время суток.</p></a>
+            <a class="product-card product-card--compact" href="life-services.html#products"><span class="product-card__icon">📝</span><h3>Приёмка квартиры</h3><p>Осмотр жилья от застройщика перед подписанием документов.</p></a>
+            <a class="product-card product-card--compact" href="financial-protector.html"><span class="product-card__icon">🏠</span><h3>Домовой сервис</h3><p>Помощь проверенных специалистов для решения бытовых вопросов.</p></a>
+            <article class="product-card product-card--compact" aria-disabled="true"><span class="product-card__icon">⚖️</span><h3>Правовая поддержка</h3><p>Консультации по юридическим вопросам каждый день.</p></article>
+          </div>
+        </div>
+        <span class="popular-slider__fade" aria-hidden="true"></span>
+        <button class="popular-slider__arrow popular-slider__arrow--next" type="button" aria-label="Следующие сервисы" data-service-next>→</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split-panel">
+        <div class="split-panel__copy">
+          <h2>Не нашли подходящий сервис?</h2>
+          <p>Опишите ситуацию — специалист уточнит задачу и подскажет, какой продукт подходит.</p>
+          <a class="button" href="#contact">Получить консультацию</a>
+        </div>
+        <div class="split-panel__media"><div class="media-placeholder"><div><strong>Консультационный визуал</strong>Специалист контактного центра разговаривает с клиентом и помогает подобрать сервис.</div></div></div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="how">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-heading__copy"><h2>Один звонок — остальное берём на себя</h2><p>Не нужно искать исполнителя и разбираться в ситуации самостоятельно.</p></div>
+        </div>
+        <div class="steps">
+          <article class="step"><h3>Вы выбираете сервис</h3><p>Готовый продукт можно приобрести через партнёра МСГ.</p></article>
+          <article class="step"><h3>Обращаетесь 24/7</h3><p>Оператор уточняет ситуацию и проверяет условия продукта.</p></article>
+          <article class="step"><h3>Получаете помощь</h3><p>Подключаем профильного специалиста или организуем выезд.</p></article>
+          <article class="step"><h3>Контролируем результат</h3><p>МСГ отвечает за качество и остаётся на связи до решения.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading"><div class="section-heading__copy"><h2>Не агрегатор, а ответственная сервисная компания</h2><p>МСГ организует помощь, контролирует качество и остаётся единой точкой контакта для клиента.</p></div></div>
+        <div class="grid grid--4 advantages-list">
+          <article class="card"><div class="card-icon">✓</div><h3>Проверенные исполнители</h3><p>Работают по договору и единым требованиям к срокам и качеству.</p></article>
+          <article class="card"><div class="card-icon">◎</div><h3>Одна точка входа</h3><p>Не нужно искать, сравнивать и договариваться с каждым специалистом.</p></article>
+          <article class="card"><div class="card-icon">₽</div><h3>Понятные условия</h3><p>Состав, лимиты и количество обращений известны заранее.</p></article>
+          <article class="card"><div class="card-icon">♟</div><h3>Ответственность МСГ</h3><p>Контролируем оказание услуги и отвечаем перед клиентом.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white" id="trust">
+      <div class="container">
+        <div class="section-heading"><div class="section-heading__copy"><h2>Инфраструктура, которая уже работает</h2><p>Презентационные показатели требуют подтверждения перед публикацией.</p></div></div>
+        <div class="stats">
+          <div class="stat"><strong>500 000+</strong><span>клиентов приобрели сервисы</span></div>
+          <div class="stat"><strong>500+</strong><span>исполнителей по критериям SLA</span></div>
+          <div class="stat"><strong>24/7</strong><span>работает контактный центр</span></div>
+          <div class="stat"><strong>РФ</strong><span>поддержка по всей территории страны</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container">
+        <div class="section-heading"><div class="section-heading__copy"><h2>Актуальные акции МСГ</h2><p>Специальные предложения на сервисы для автомобиля, дома и комфортной жизни.</p></div><a class="text-link" href="promotions.html" data-placeholder-link>Все акции →</a></div>
+        <div class="grid grid--3">
+          <article class="promo-card"><div class="media-placeholder"><div><strong>Баннер акции</strong>Визуал программы для водителей</div></div><div class="promo-card__copy"><h3>Поддержка в дальней поездке</h3><p>Специальная подборка автомобильных сервисов.</p></div></article>
+          <article class="promo-card"><div class="media-placeholder"><div><strong>Баннер сервиса</strong>Визуал помощи мастера для дома</div></div><div class="promo-card__copy"><h3>Помощь дому в нужный момент</h3><p>Узнайте больше о «Домовом сервисе».</p></div></article>
+          <article class="promo-card"><div class="media-placeholder"><div><strong>Баннер сезона</strong>Визуал бытового сервиса</div></div><div class="promo-card__copy"><h3>Дом готов к новому сезону</h3><p>Помощь проверенных мастеров для вашего дома.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container form-card">
+        <div><h2>Получите консультацию</h2><p>Оставьте имя и телефон — специалист свяжется с вами и поможет выбрать подходящий сервис.</p><p>☎ +7 804 700-02-24<br>Ежедневно, круглосуточно</p></div>
+        <form data-demo-form>
+          <div class="form-grid">
+            <div class="field"><label for="name">Имя *</label><input id="name" name="name" required></div>
+            <div class="field"><label for="phone">Телефон *</label><input id="phone" name="phone" type="tel" required></div>
+            <fieldset class="field field--full choice-field"><legend>Тема обращения</legend><div class="radio-list"><label class="radio-option"><input type="radio" name="topic" value="current-product" checked><span>Помощь по действующему продукту</span></label><label class="radio-option"><input type="radio" name="topic" value="service-choice"><span>Выбор сервиса</span></label><label class="radio-option"><input type="radio" name="topic" value="partner"><span>Стать партнёром</span></label><label class="radio-option"><input type="radio" name="topic" value="other"><span>Другой вопрос</span></label></div></fieldset>
+            <div class="field field--full"><label for="message">Комментарий</label><textarea id="message" name="message"></textarea></div>
+            <div class="field field--full"><button class="button" type="submit">Получить консультацию</button><p class="form-note">Демонстрационная форма. Отправка данных не выполняется.</p></div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a class="brand" href="index.html"><span class="brand-mark">МСГ</span><span>МультиСервисГарант</span></a><p>Комплексные сервисные продукты для автомобиля, дома и повседневной жизни.</p></div>
+        <div class="footer-column"><h3>Наши сервисы</h3><a href="#directions">Сервисы для авто</a><a href="life-services.html">Сервисы для дома</a><a aria-disabled="true">Сервисы для комфортной жизни</a><a aria-disabled="true">Правовая поддержка</a><a href="service-blocks.html">Библиотека блоков</a></div>
+        <div class="footer-column"><h3>Клиентам</h3><a href="promotions.html" data-placeholder-link>Акции</a><a href="partners.html" data-placeholder-link>Партнёрам</a><a href="clients.html" data-placeholder-link>Клиентам</a></div>
+        <div class="footer-column"><h3>Информация</h3><a href="information.html" data-placeholder-link>Информация</a><a href="about.html" data-placeholder-link>О нас</a><a href="contacts.html" data-placeholder-link>Контакты</a><a href="legal.html" data-placeholder-link>Правовая информация</a></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 МультиСервисГарант</span><span>Прототип структуры и дизайна</span></div>
+    </div>
+  </footer>
+</body>
+</html>

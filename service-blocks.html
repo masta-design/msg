@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Библиотека универсальных блоков для страниц услуг">
+  <title>Библиотека блоков — МультиСервисГарант</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260809-12">
+  <script src="script.js?v=20260809-9" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-top">
+      <a class="brand" href="index.html" aria-label="МультиСервисГарант — главная"><span class="brand-mark">МСГ</span><span class="brand-text">МультиСервисГарант</span></a>
+      <div class="catalog-search">
+        <div class="catalog-search__field"><span class="catalog-search__icon">⌕</span><input data-catalog-search type="search" placeholder="Найти услугу..." aria-label="Поиск по каталогу услуг" autocomplete="off"></div>
+        <div class="search-results" role="listbox"></div>
+      </div>
+      <div class="header-actions"><a class="support-phone" href="tel:+78047000224">+7 804 700-02-24<small>круглосуточно</small></a><a class="button button--small" href="clients.html" data-placeholder-link>Получить помощь</a><button class="menu-toggle" data-menu-toggle type="button" aria-label="Открыть меню" aria-expanded="false">☰</button></div>
+    </div>
+    <div class="header-nav-wrap">
+      <nav class="container header-nav" aria-label="Основная навигация">
+        <div class="nav-item">
+          <a href="index.html" aria-current="page">Наши сервисы <span class="nav-caret">⌄</span></a>
+          <div class="nav-dropdown nav-dropdown--services">
+            <a href="auto-services.html" data-placeholder-link><span>🚘</span><span>Сервисы для авто<small>Помощь на дороге и автомобильные продукты</small></span></a>
+            <a href="life-services.html"><span>🏠</span><span>Сервисы для дома<small>Мастера, диагностика и недвижимость</small></span></a>
+            <a aria-disabled="true"><span>✨</span><span>Сервисы для комфортной жизни<small>Поддержка в повседневных и важных ситуациях</small></span></a>
+            <a aria-disabled="true"><span>⚖️</span><span>Правовая поддержка<small>Юридические консультации и сопровождение</small></span></a>
+            <a href="service-blocks.html" aria-current="page"><span>▦</span><span>Библиотека блоков<small>Все шаблонные секции для наполнения</small></span></a>
+          </div>
+        </div>
+        <div class="nav-item"><a href="promotions.html" data-placeholder-link>Акции <span class="nav-caret">⌄</span></a><div class="nav-dropdown"><a href="promotions.html?offer=road" data-placeholder-link><span>Защита в поездке</span></a><a href="promotions.html?offer=finance" data-placeholder-link><span>Финансовая безопасность</span></a><a href="promotions.html?offer=home" data-placeholder-link><span>Дом готов к сезону</span></a></div></div>
+        <a href="partners.html" data-placeholder-link>Партнёрам</a><a href="clients.html" data-placeholder-link>Клиентам</a>
+        <div class="nav-item"><a href="information.html" data-placeholder-link>Информация <span class="nav-caret">⌄</span></a><div class="nav-dropdown nav-dropdown--right"><a href="news.html" data-placeholder-link><span>Новости</span></a><a href="legal.html" data-placeholder-link><span>Правовая информация</span></a></div></div>
+        <div class="nav-item"><a href="about.html" data-placeholder-link>О нас <span class="nav-caret">⌄</span></a><div class="nav-dropdown nav-dropdown--right"><a href="contacts.html" data-placeholder-link><span>Контакты</span></a><a href="legal.html" data-placeholder-link><span>Правовая информация</span></a><a href="privacy.html" data-placeholder-link><span>Политика обработки персональных данных</span></a></div></div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="blocks-library">
+    <div class="container breadcrumbs"><a href="index.html">Главная</a><span><a href="index.html">Наши сервисы</a></span><span>Библиотека блоков</span></div>
+
+    <section class="section blocks-library__intro">
+      <div class="container hero-card">
+        <div class="hero-copy"><h1>Библиотека блоков</h1><p>Универсальные секции, из которых контент-менеджер сможет собирать страницы услуг с разным объёмом и типом материалов</p><a class="button" href="#background-block">Смотреть блоки ↓</a></div>
+        <div class="hero-media media-placeholder"><strong>Обложка библиотеки</strong><span>Схема из модульных секций и карточек</span></div>
+      </div>
+    </section>
+
+    <section class="section section--white" id="background-block">
+      <div class="container">
+        <div class="background-demo">
+          <div class="background-demo__content"><h2>Секция с картинкой на фоне, текстом и кнопками</h2><p>Краткое описание блока в две или три строки помогает раскрыть основную мысль и подготовить пользователя к следующему действию</p><div class="hero-actions"><a class="button button--light" href="#">Основная кнопка</a><a class="button button--ghost-light" href="#">Вторая кнопка</a></div></div>
+          <span class="background-demo__label">Фоновое изображение</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cards-block">
+      <div class="container">
+        <div class="intro-and-cards__top"><h2>Заголовок с текстом, кнопками и карточками снизу</h2><div><p>Первый абзац демонстрационного текста показывает возможную длину описания и плотность набора</p><p>Второй абзац дополняет первый и помогает оценить вертикальный ритм секции</p><div class="inline-actions"><a class="button button--outline" href="#">Кнопка</a><a class="text-link" href="#">Текстовая ссылка →</a></div></div></div>
+        <div class="feature-demo-grid">
+          <article class="feature-demo-card"><span class="feature-demo-card__icon">◇</span><h3>Заголовок карточки</h3><p>Короткое описание карточки в одну или две строки</p></article>
+          <article class="feature-demo-card"><span class="feature-demo-card__icon">□</span><h3>Заголовок карточки</h3><p>Короткое описание карточки в одну или две строки</p></article>
+          <article class="feature-demo-card"><span class="feature-demo-card__icon">△</span><h3>Заголовок карточки</h3><p>Короткое описание карточки в одну или две строки</p></article>
+          <article class="feature-demo-card"><span class="feature-demo-card__icon">○</span><h3>Заголовок карточки</h3><p>Короткое описание карточки в одну или две строки</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white" id="comparison-block">
+      <div class="container"><div class="section-heading"><div class="section-heading__copy"><h2>Секция с заголовком и блоком плюсов и минусов</h2><p>Два параллельных списка для наглядного сравнения подходов или вариантов</p></div></div>
+        <div class="pros-cons">
+          <article class="pros-cons__panel pros-cons__panel--muted"><h3>Первый вариант</h3>
+            <div class="pros-cons__row"><div><strong>Заголовок пункта</strong><p>Описание свойства или ограничения выбранного варианта</p></div><span>×</span></div>
+            <div class="pros-cons__row"><div><strong>Заголовок пункта</strong><p>Описание свойства или ограничения выбранного варианта</p></div><span>×</span></div>
+            <div class="pros-cons__row"><div><strong>Заголовок пункта</strong><p>Описание свойства или ограничения выбранного варианта</p></div><span>×</span></div>
+            <div class="pros-cons__row"><div><strong>Заголовок пункта</strong><p>Описание свойства или ограничения выбранного варианта</p></div><span>×</span></div>
+          </article>
+          <article class="pros-cons__panel"><h3>Второй вариант</h3>
+            <div class="pros-cons__row"><div><strong>Заголовок пункта</strong><p>Описание преимущества или особенности выбранного варианта</p></div><span class="is-positive">✓</span></div>
+            <div class="pros-cons__row"><div><strong>Заголовок пункта</strong><p>Описание преимущества или особенности выбранного варианта</p></div><span class="is-positive">✓</span></div>
+            <div class="pros-cons__row"><div><strong>Заголовок пункта</strong><p>Описание преимущества или особенности выбранного варианта</p></div><span class="is-positive">✓</span></div>
+            <div class="pros-cons__row"><div><strong>Заголовок пункта</strong><p>Описание преимущества или особенности выбранного варианта</p></div><span class="is-positive">✓</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="timeline-block">
+      <div class="container"><div class="section-heading section-heading--center"><div class="section-heading__copy"><h2>Секция с вертикальным пошаговым списком и картинками</h2><p>Последовательность этапов с чередованием текста и визуальных материалов</p></div></div>
+        <div class="vertical-timeline">
+          <article class="timeline-entry"><div class="timeline-entry__media media-placeholder"><strong>Изображение этапа</strong><span>Горизонтальный визуал 3:2</span></div><span class="timeline-entry__number">01</span><div class="timeline-entry__copy"><h3>Заголовок первого этапа</h3><p>Описание этапа показывает пример объёма текста и объясняет, что происходит на этом шаге</p></div></article>
+          <article class="timeline-entry"><div class="timeline-entry__media media-placeholder"><strong>Изображение этапа</strong><span>Горизонтальный визуал 3:2</span></div><span class="timeline-entry__number">02</span><div class="timeline-entry__copy"><h3>Заголовок второго этапа</h3><p>Описание этапа показывает пример объёма текста и объясняет, что происходит на этом шаге</p></div></article>
+          <article class="timeline-entry"><div class="timeline-entry__media media-placeholder"><strong>Изображение этапа</strong><span>Горизонтальный визуал 3:2</span></div><span class="timeline-entry__number">03</span><div class="timeline-entry__copy"><h3>Заголовок третьего этапа</h3><p>Описание этапа показывает пример объёма текста и объясняет, что происходит на этом шаге</p></div></article>
+          <article class="timeline-entry"><div class="timeline-entry__media media-placeholder"><strong>Изображение этапа</strong><span>Горизонтальный визуал 3:2</span></div><span class="timeline-entry__number">04</span><div class="timeline-entry__copy"><h3>Заголовок четвёртого этапа</h3><p>Описание этапа показывает пример объёма текста и объясняет, что происходит на этом шаге</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--blue" id="tariffs-block">
+      <div class="container"><div class="section-heading section-heading--center"><div class="section-heading__copy"><h2>Секция с тарифами</h2><p>Карточки вариантов с параметрами, составом, стоимостью и целевым действием</p></div></div>
+        <div class="library-tariffs">
+          <article class="library-tariff"><span class="library-tariff__icon">○</span><h3>Первый тариф</h3><p class="library-tariff__lead">Краткое описание тарифа</p><dl><div><dt>Параметр</dt><dd>Значение</dd></div><div><dt>Параметр</dt><dd>Значение</dd></div></dl><h4>Включено</h4><ul><li>Первый пункт списка</li><li>Второй пункт списка</li><li>Третий пункт списка</li><li class="is-disabled">Четвёртый пункт списка</li></ul><div class="library-tariff__bottom"><strong>от 0 000 ₽</strong><a class="button button--outline" href="#">Выбрать тариф</a></div></article>
+          <article class="library-tariff library-tariff--accent"><span class="library-tariff__badge">Популярный</span><span class="library-tariff__icon">◇</span><h3>Второй тариф</h3><p class="library-tariff__lead">Краткое описание тарифа</p><dl><div><dt>Параметр</dt><dd>Значение</dd></div><div><dt>Параметр</dt><dd>Значение</dd></div></dl><h4>Включено</h4><ul><li>Первый пункт списка</li><li>Второй пункт списка</li><li>Третий пункт списка</li><li>Четвёртый пункт списка</li></ul><div class="library-tariff__bottom"><strong>от 0 000 ₽</strong><a class="button" href="#">Выбрать тариф</a></div></article>
+          <article class="library-tariff"><span class="library-tariff__icon">△</span><h3>Третий тариф</h3><p class="library-tariff__lead">Краткое описание тарифа</p><dl><div><dt>Параметр</dt><dd>Значение</dd></div><div><dt>Параметр</dt><dd>Значение</dd></div></dl><h4>Включено</h4><ul><li>Первый пункт списка</li><li>Второй пункт списка</li><li>Третий пункт списка</li><li>Четвёртый пункт списка</li></ul><div class="library-tariff__bottom"><strong>от 0 000 ₽</strong><a class="button" href="#">Выбрать тариф</a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white" id="logos-block">
+      <div class="container"><div class="section-heading"><div class="section-heading__copy"><h2>Секция со слайдером логотипов</h2><p>Горизонтальная лента для партнёров, брендов или других знаков</p></div></div></div>
+      <div class="logo-demo-slider" data-service-slider>
+        <div class="logo-demo-slider__viewport" data-service-viewport><div class="logo-demo-slider__track"><div class="logo-demo-card">Логотип 01</div><div class="logo-demo-card">Логотип 02</div><div class="logo-demo-card">Логотип 03</div><div class="logo-demo-card">Логотип 04</div><div class="logo-demo-card">Логотип 05</div><div class="logo-demo-card">Логотип 06</div><div class="logo-demo-card">Логотип 07</div></div></div>
+        <div class="logo-demo-slider__controls"><button type="button" aria-label="Предыдущие логотипы" data-service-prev hidden>←</button><button type="button" aria-label="Следующие логотипы" data-service-next>→</button></div>
+      </div>
+    </section>
+
+    <section class="section" id="text-blocks">
+      <div class="container">
+        <div class="text-demo text-demo--left"><h2>Текстовый блок слева</h2><p>Демонстрационный абзац помогает оценить ширину строки, размер набора и свободное пространство вокруг текста</p></div>
+        <div class="text-demo text-demo--center"><h2>Текстовый блок в центре</h2><p>Демонстрационный абзац помогает оценить ширину строки, размер набора и свободное пространство вокруг текста</p></div>
+        <div class="text-demo text-demo--columns"><h2>Текстовый блок в две колонки</h2><div><p>Первый абзац демонстрирует размещение длинного текста напротив крупного заголовка</p><p>Второй абзац продолжает текст и показывает ритм нескольких смысловых фрагментов</p></div></div>
+      </div>
+    </section>
+
+    <section class="section section--white" id="split-block">
+      <div class="container"><div class="section-heading"><div class="section-heading__copy"><h2>Секция с текстом и изображением в две колонки</h2><p>Универсальный блок для описания, иллюстрации и одного целевого действия</p></div></div><div class="split-panel"><div><h3>Заголовок смыслового блока</h3><p>Описание блока располагается рядом с изображением и может состоять из нескольких коротких абзацев</p><a class="text-link" href="#">Текстовая ссылка →</a></div><div class="media-placeholder"><strong>Изображение блока</strong><span>Горизонтальный визуал или фотография</span></div></div></div>
+    </section>
+
+    <section class="section" id="simple-cards">
+      <div class="container"><div class="section-heading"><div class="section-heading__copy"><h2>Секция с преимуществами</h2><p>Набор равнозначных элементов с иконкой, заголовком и подзаголовком</p></div></div><div class="grid grid--4 library-simple-cards"><article><span>◇</span><h3>Заголовок преимущества</h3><p>Короткий подзаголовок элемента</p></article><article><span>□</span><h3>Заголовок преимущества</h3><p>Короткий подзаголовок элемента</p></article><article><span>△</span><h3>Заголовок преимущества</h3><p>Короткий подзаголовок элемента</p></article><article><span>○</span><h3>Заголовок преимущества</h3><p>Короткий подзаголовок элемента</p></article></div></div>
+    </section>
+
+    <section class="section section--white" id="stats-block">
+      <div class="container"><div class="section-heading"><div class="section-heading__copy"><h2>Секция с показателями</h2><p>Четыре крупных значения с короткими пояснениями</p></div></div><div class="stats"><div class="stat"><strong>100+</strong><span>Подпись первого показателя</span></div><div class="stat"><strong>24/7</strong><span>Подпись второго показателя</span></div><div class="stat"><strong>500</strong><span>Подпись третьего показателя</span></div><div class="stat"><strong>01</strong><span>Подпись четвёртого показателя</span></div></div></div>
+    </section>
+
+    <section class="section" id="promo-block">
+      <div class="container"><div class="section-heading"><div class="section-heading__copy"><h2>Секция с промо-карточками</h2><p>Карточки с изображением, заголовком и коротким пояснением</p></div></div><div class="grid grid--3"><article class="promo-card"><div class="media-placeholder"><strong>Изображение карточки</strong><span>Промо-визуал</span></div><div class="promo-card__copy"><h3>Заголовок карточки</h3><p>Короткий подзаголовок карточки</p></div></article><article class="promo-card"><div class="media-placeholder"><strong>Изображение карточки</strong><span>Промо-визуал</span></div><div class="promo-card__copy"><h3>Заголовок карточки</h3><p>Короткий подзаголовок карточки</p></div></article><article class="promo-card"><div class="media-placeholder"><strong>Изображение карточки</strong><span>Промо-визуал</span></div><div class="promo-card__copy"><h3>Заголовок карточки</h3><p>Короткий подзаголовок карточки</p></div></article></div></div>
+    </section>
+
+    <section class="section section--dark" id="steps-block">
+      <div class="container"><div class="section-heading"><div class="section-heading__copy"><h2>Секция с горизонтальными шагами</h2><p>Короткая последовательность действий с акцентом на крупной нумерации</p></div></div><div class="steps library-steps"><article class="step"><span>01</span><h3>Название шага</h3><p>Короткое описание первого действия</p></article><article class="step"><span>02</span><h3>Название шага</h3><p>Короткое описание второго действия</p></article><article class="step"><span>03</span><h3>Название шага</h3><p>Короткое описание третьего действия</p></article><article class="step"><span>04</span><h3>Название шага</h3><p>Короткое описание четвёртого действия</p></article></div></div>
+    </section>
+
+    <section class="section section--white" id="cases-block">
+      <div class="container">
+        <div class="section-heading"><div class="section-heading__copy"><h2>Секция с кейсами</h2><p>Карточки историй с изображением, заголовком и кратким результатом</p></div></div>
+        <div class="grid grid--2">
+          <article class="case-card case-card--interactive" role="button" tabindex="0" data-case-open="demo-one" aria-label="Открыть первый демонстрационный кейс"><div class="case-card__media"><div class="media-placeholder"><div><strong>Изображение кейса</strong>Соотношение сторон 3:2</div></div></div><div class="case-card__copy"><span class="tag">Метка кейса</span><h3>Заголовок первого кейса</h3><p class="muted">Краткое описание ситуации и полученного результата</p></div></article>
+          <article class="case-card case-card--interactive" role="button" tabindex="0" data-case-open="demo-two" aria-label="Открыть второй демонстрационный кейс"><div class="case-card__media"><div class="media-placeholder"><div><strong>Изображение кейса</strong>Соотношение сторон 3:2</div></div></div><div class="case-card__copy"><span class="tag">Метка кейса</span><h3>Заголовок второго кейса</h3><p class="muted">Краткое описание ситуации и полученного результата</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="case-modal" data-case-modal aria-labelledby="case-modal-title">
+      <button class="case-modal__close" type="button" data-case-close aria-label="Закрыть окно">×</button>
+      <div class="case-modal__media"><div class="media-placeholder"><div><strong data-case-image-title>Изображение кейса</strong><span data-case-image-text></span></div></div></div>
+      <div class="case-modal__content"><span class="tag" data-case-tag></span><h2 id="case-modal-title" data-case-title></h2><p class="case-modal__lead" data-case-lead></p><div class="case-modal__story" data-case-story></div><button class="button" type="button" data-case-consultation>Закрыть</button></div>
+    </dialog>
+
+    <section class="section section--white" id="faq-block">
+      <div class="container"><div class="section-heading"><div class="section-heading__copy"><h2>Секция с вопросами и ответами</h2><p>Раскрывающиеся строки для дополнительной информации</p></div></div><div class="faq-list"><details class="faq-item"><summary>Заголовок первого вопроса</summary><p>Демонстрационный ответ на вопрос размещается внутри раскрывающегося блока</p></details><details class="faq-item"><summary>Заголовок второго вопроса</summary><p>Демонстрационный ответ на вопрос размещается внутри раскрывающегося блока</p></details><details class="faq-item"><summary>Заголовок третьего вопроса</summary><p>Демонстрационный ответ на вопрос размещается внутри раскрывающегося блока</p></details></div></div>
+    </section>
+
+    <section class="section" id="form-block"><div class="container form-card"><div><h2>Секция с формой</h2><p>Заголовок и пояснение располагаются рядом с набором полей и кнопкой</p><p>Дополнительная строка информации</p></div><form data-demo-form><div class="form-grid"><div class="field"><label for="demo-name">Первое поле *</label><input id="demo-name" required></div><div class="field"><label for="demo-phone">Второе поле *</label><input id="demo-phone" required></div><fieldset class="field field--full topic-options"><legend>Выбор варианта</legend><label><input type="radio" name="demo-topic" checked> Первый вариант</label><label><input type="radio" name="demo-topic"> Второй вариант</label><label><input type="radio" name="demo-topic"> Третий вариант</label></fieldset><div class="field field--full"><label for="demo-comment">Текстовое поле</label><textarea id="demo-comment"></textarea></div><div class="field field--full"><button class="button" type="submit">Кнопка формы</button><p class="form-note">Демонстрационная форма без отправки данных</p></div></div></form></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a class="brand" href="index.html"><span class="brand-mark">МСГ</span><span>МультиСервисГарант</span></a><p>Комплексные сервисные продукты для автомобиля, дома и повседневной жизни</p></div><div class="footer-column"><h3>Наши сервисы</h3><a href="index.html#directions">Сервисы для авто</a><a href="life-services.html">Сервисы для дома</a><a aria-disabled="true">Сервисы для комфортной жизни</a><a aria-disabled="true">Правовая поддержка</a><a href="service-blocks.html">Библиотека блоков</a></div><div class="footer-column"><h3>Клиентам</h3><a href="promotions.html" data-placeholder-link>Акции</a><a href="partners.html" data-placeholder-link>Партнёрам</a><a href="clients.html" data-placeholder-link>Клиентам</a></div><div class="footer-column"><h3>Информация</h3><a href="information.html" data-placeholder-link>Информация</a><a href="about.html" data-placeholder-link>О нас</a><a href="contacts.html" data-placeholder-link>Контакты</a></div></div><div class="footer-bottom"><span>© 2026 МультиСервисГарант</span><span>Демонстрационная библиотека секций</span></div></div></footer>
+</body>
+</html>

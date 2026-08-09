@@ -1,0 +1,11 @@
+# Внутренние материалы проекта — не публикуются вместе с прототипом
+meeting_transcript.txt
+PROJECT_CONTEXT.md
+references/
+
+# Системные и редакторские файлы
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
