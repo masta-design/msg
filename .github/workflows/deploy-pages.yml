@@ -1,0 +1,62 @@
+name: Deploy both site versions to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+      - codex/ver-2-0
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the old version
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          path: source-main
+          persist-credentials: false
+
+      - name: Check out the new version
+        uses: actions/checkout@v6
+        with:
+          ref: codex/ver-2-0
+          path: source-v2
+          persist-credentials: false
+
+      - name: Assemble both versions
+        run: |
+          mkdir -p _site/ver-2-0
+          cp source-main/index.html source-main/financial-protector.html source-main/life-services.html source-main/service-blocks.html source-main/script.js source-main/styles.css _site/
+          cp -R "source-v2/ver 2.0/." _site/ver-2-0/
+          touch _site/.nojekyll
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
