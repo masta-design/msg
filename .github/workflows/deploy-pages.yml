@@ -1,4 +1,4 @@
-name: Deploy both site versions to GitHub Pages
+name: Deploy all site versions to GitHub Pages
 
 on:
   push:
@@ -32,11 +32,23 @@ jobs:
           path: source-v2
           persist-credentials: false
 
-      - name: Assemble both versions
+      - name: Check out the prototype
+        uses: actions/checkout@v6
+        with:
+          ref: prototype-v3
+          path: source-v3
+          persist-credentials: false
+
+      - name: Build the prototype
+        working-directory: source-v3/prototype-v3
+        run: python3 build.py
+
+      - name: Assemble all versions
         run: |
-          mkdir -p _site/ver-2-0
+          mkdir -p _site/ver-2-0 _site/prototype-v3
           cp source-main/index.html source-main/financial-protector.html source-main/life-services.html source-main/service-blocks.html source-main/script.js source-main/styles.css _site/
           cp -R "source-v2/ver 2.0/." _site/ver-2-0/
+          cp -R source-v3/prototype-v3/dist/msg-prototype/. _site/prototype-v3/
           touch _site/.nojekyll
 
       - name: Configure Pages
