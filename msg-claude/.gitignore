@@ -1,0 +1,3 @@
+# Сборка: создаётся командой python3 build.py
+dist/
+__pycache__/
